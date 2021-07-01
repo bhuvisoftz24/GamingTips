@@ -9,7 +9,6 @@ class _TopNavState extends State<TopNavBar> {
   List<String> categories = [
     "Hero Details",
     "Rank up tips",
-    "Video",
     "Latest events"
   ];
   int selectedIndex = 0;
