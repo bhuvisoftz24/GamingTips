@@ -1,9 +1,7 @@
-import 'dart:math' as math;
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
 import 'package:game/ExtraData.dart';
-import 'package:game/constant.dart';
 import 'package:game/rankupdata.dart';
 
 class RankUp extends StatelessWidget {
@@ -47,7 +45,7 @@ class RankUp extends StatelessWidget {
                 width: 300,
                 height: 150,
                 // margin: EdgeInsets.only(right: 300),
-                color: Colors.blue,
+                color: Colors.black,
                 child: Row(
                   children: [
                     Image(
@@ -60,10 +58,10 @@ class RankUp extends StatelessWidget {
                         Column(
                           children: [
                             Container(
-                                color: Colors.yellow,
+                                color: Colors.black,
                                 margin: EdgeInsets.only(top: 30, right: 70),
                                 width: 100,
-                                height: 25,
+                                height: 18,
                                 child: buildChapter(rankdata.title)),
                             Column(
                               children: [
@@ -72,8 +70,8 @@ class RankUp extends StatelessWidget {
                                       left: 5,
                                     ),
                                     width: 180,
-                                    height: 60,
-                                    color: Colors.pink,
+                                    height: 65,
+                                    color: Colors.black,
                                     child:
                                         buildDescription(rankdata.description))
                               ],
