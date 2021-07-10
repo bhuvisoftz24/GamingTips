@@ -67,6 +67,13 @@ flutter:
     - family: Open Saas
       fonts:
         - asset: assets/fonts/BerkshireSwash-Regular.ttf
+fonts:
+  - family: Bangers
+    fonts:
+      - asset: assets/fonts/Bangers-Regular.ttf
+
+
+
   # fonts:
   #   - family: Schyler
   #     fonts:

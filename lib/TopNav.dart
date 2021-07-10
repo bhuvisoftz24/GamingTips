@@ -1,14 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:game/MyScreen.dart';
+import 'package:game/rankUp.dart';
+import 'package:game/video.dart';
 
 class TopNavBar extends StatefulWidget {
   @override
   _TopNavState createState() => _TopNavState();
 }
+//BuildContext context;
 
 class _TopNavState extends State<TopNavBar> {
   List<String> categories = [
     "Hero Details",
     "Rank up tips",
+    "WTF Videos",
     "Latest events"
   ];
   int selectedIndex = 0;
@@ -23,9 +28,10 @@ class _TopNavState extends State<TopNavBar> {
       height: rheight * .059,
       margin: EdgeInsets.only(
           top: MediaQuery.of(context).size.height / 50,
-          left: MediaQuery.of(context).size.width / 20),
+          left: MediaQuery.of(context).size.width / 20,
+          right: MediaQuery.of(context).size.width / 20),
       child: ListView.builder(
-        //  physics: BouncingScrollPhysics(),
+        physics: BouncingScrollPhysics(),
         scrollDirection: Axis.horizontal,
         itemCount: categories.length,
         itemBuilder: (context, index) => buildCategoriItem(index),
@@ -38,6 +44,36 @@ class _TopNavState extends State<TopNavBar> {
         onTap: () {
           setState(() {
             selectedIndex = index;
+            switch (index) {
+              case 0:
+                /*Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => MyScreen(),
+                  ),
+                );*/
+                break;
+              case 1:
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => RankUp(),
+                  ),
+                );
+                break;
+              case 2:
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => VideoSection(),
+                  ),
+                );
+                break;
+              case 3:
+                Icons.label;
+                break;
+              default:
+            }
           });
         },
         child: Column(children: [
