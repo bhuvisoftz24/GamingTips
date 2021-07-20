@@ -7,6 +7,7 @@ class Avtaar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Expanded(
       child: SingleChildScrollView(
+        physics: BouncingScrollPhysics(),
         scrollDirection: Axis.vertical,
         child: Column(
           mainAxisSize: MainAxisSize.max,
@@ -100,7 +101,7 @@ class Avtaar extends StatelessWidget {
                                 ),
                                 image: DecorationImage(
                                     image:
-                                        AssetImage('assets/images/avtar.png'),
+                                    AssetImage('assets/images/avtar.png'),
                                     fit: BoxFit.fitWidth),
                               ))),
                       Positioned(
@@ -162,7 +163,7 @@ class Avtaar extends StatelessWidget {
                                 ),
                                 image: DecorationImage(
                                     image:
-                                        AssetImage('assets/images/avtar.png'),
+                                    AssetImage('assets/images/avtar.png'),
                                     fit: BoxFit.fitWidth),
                               ))),
                       Positioned(
@@ -231,7 +232,7 @@ class Avtaar extends StatelessWidget {
                                 ),
                                 image: DecorationImage(
                                     image:
-                                        AssetImage('assets/images/avtar.png'),
+                                    AssetImage('assets/images/avtar.png'),
                                     fit: BoxFit.fitWidth),
                               ))),
                       Positioned(
@@ -293,7 +294,7 @@ class Avtaar extends StatelessWidget {
                                 ),
                                 image: DecorationImage(
                                     image:
-                                        AssetImage('assets/images/avtar.png'),
+                                    AssetImage('assets/images/avtar.png'),
                                     fit: BoxFit.fitWidth),
                               ))),
                       Positioned(
@@ -355,7 +356,7 @@ class Avtaar extends StatelessWidget {
                                 ),
                                 image: DecorationImage(
                                     image:
-                                        AssetImage('assets/images/avtar.png'),
+                                    AssetImage('assets/images/avtar.png'),
                                     fit: BoxFit.fitWidth),
                               ))),
                       Positioned(
@@ -424,7 +425,7 @@ class Avtaar extends StatelessWidget {
                                 ),
                                 image: DecorationImage(
                                     image:
-                                        AssetImage('assets/images/avtar.png'),
+                                    AssetImage('assets/images/avtar.png'),
                                     fit: BoxFit.fitWidth),
                               ))),
                       Positioned(
@@ -486,7 +487,7 @@ class Avtaar extends StatelessWidget {
                                 ),
                                 image: DecorationImage(
                                     image:
-                                        AssetImage('assets/images/avtar.png'),
+                                    AssetImage('assets/images/avtar.png'),
                                     fit: BoxFit.fitWidth),
                               ))),
                       Positioned(
@@ -548,7 +549,7 @@ class Avtaar extends StatelessWidget {
                                 ),
                                 image: DecorationImage(
                                     image:
-                                        AssetImage('assets/images/avtar.png'),
+                                    AssetImage('assets/images/avtar.png'),
                                     fit: BoxFit.fitWidth),
                               ))),
                       Positioned(
@@ -617,7 +618,7 @@ class Avtaar extends StatelessWidget {
                                 ),
                                 image: DecorationImage(
                                     image:
-                                        AssetImage('assets/images/avtar.png'),
+                                    AssetImage('assets/images/avtar.png'),
                                     fit: BoxFit.fitWidth),
                               ))),
                       Positioned(
@@ -679,7 +680,7 @@ class Avtaar extends StatelessWidget {
                                 ),
                                 image: DecorationImage(
                                     image:
-                                        AssetImage('assets/images/avtar.png'),
+                                    AssetImage('assets/images/avtar.png'),
                                     fit: BoxFit.fitWidth),
                               ))),
                       Positioned(
@@ -741,7 +742,7 @@ class Avtaar extends StatelessWidget {
                                 ),
                                 image: DecorationImage(
                                     image:
-                                        AssetImage('assets/images/avtar.png'),
+                                    AssetImage('assets/images/avtar.png'),
                                     fit: BoxFit.fitWidth),
                               ))),
                       Positioned(

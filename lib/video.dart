@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:game/BottomNavigation.dart';
 import 'package:game/ExtraData.dart';
+import 'package:game/TopNav.dart';
 import 'package:game/constant.dart';
 import 'package:game/videodata.dart';
 
@@ -10,13 +12,18 @@ class VideoSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      color: Colors.black,
-      child: ListView(
-        scrollDirection: Axis.vertical,
-        physics: BouncingScrollPhysics(),
-        children: buildData(),
+    return Scaffold(
+      backgroundColor: Colors.transparent,
+      appBar: buildAppBar(),
+      body: Container(
+        color: Colors.black,
+        child: ListView(
+          scrollDirection: Axis.vertical,
+          physics: BouncingScrollPhysics(),
+          children: buildData(),
+        ),
       ),
+      bottomNavigationBar: BottomNavigtionBar(),
     );
   }
 
@@ -114,6 +121,35 @@ class VideoSection extends StatelessWidget {
           ),
         ],
       ),
+    );
+  }
+
+  AppBar buildAppBar() {
+    return AppBar(
+      title: Container(
+        // padding:  EdgeInsets.only(right: MediaQuery.of(context).size.width / 50),
+        // margin: EdgeInsets.only(right: MediaQuery.of(context).size.width / 50),
+        child: Text(
+          '\t Mlbb Tricks',
+          style: TextStyle(
+              fontSize: 24,
+              fontFamily: 'Open Saas',
+              fontStyle: FontStyle.normal,
+              fontWeight: FontWeight.w400,
+              color: Colors.red),
+        ),
+      ),
+      actions: [
+        Container(
+          margin: EdgeInsets.only(right: 10),
+          padding: EdgeInsets.all(10),
+          child: Image.asset(
+            'assets/images/notification.png',
+            width: 50,
+            height: 50,
+          ),
+        ),
+      ],
     );
   }
 }

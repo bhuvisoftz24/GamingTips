@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
@@ -77,7 +78,7 @@ buildProductsSubTitle(String text) {
           fontWeight: FontWeight.w400,
           fontFamily: 'Inter',
           color: Colors.white,
-          decorationColor: Colors.grey[800],
+          decoration: TextDecoration.none,
           fontStyle: FontStyle.normal),
     ),
   );
@@ -87,14 +88,13 @@ buildTime(String text) {
   return Text(
     text,
     style: TextStyle(
-        fontSize: 12,
-        color: Colors.white,
-        fontWeight: FontWeight.w500,
-        fontStyle: FontStyle.normal,
-        fontFamily: 'Montserrat',
-        decorationColor: Colors.black,
-        decorationThickness: 0,
-        decorationStyle: TextDecorationStyle.solid),
+      fontSize: 12,
+      color: Colors.white,
+      fontWeight: FontWeight.w500,
+      fontStyle: FontStyle.normal,
+      fontFamily: 'Montserrat',
+      decoration: TextDecoration.none,
+    ),
     textAlign: TextAlign.center,
   );
 }
@@ -103,15 +103,14 @@ buildChapter(String text) {
   return Text(
     text,
     style: TextStyle(
-        fontFamily: 'Bangers',
-        fontStyle: FontStyle.normal,
-        fontWeight: FontWeight.w400,
-        color: Colors.red,
-        letterSpacing: 1,
-        fontSize: 12,
-        decorationColor: Colors.black,
-        decorationThickness: 0,
-        decorationStyle: TextDecorationStyle.solid),
+      fontFamily: 'Bangers',
+      fontStyle: FontStyle.normal,
+      fontWeight: FontWeight.bold,
+      color: Colors.white,
+      letterSpacing: 1,
+      fontSize: 12,
+      decoration: TextDecoration.none,
+    ),
   );
 }
 
@@ -119,14 +118,13 @@ buildDescription(String text) {
   return Text(
     text,
     style: TextStyle(
-        fontFamily: 'Bangers',
-        fontStyle: FontStyle.normal,
-        fontWeight: FontWeight.w400,
-        color: Colors.white,
-        letterSpacing: 1,
-        fontSize: 14,
-        decorationColor: Colors.black,
-        decorationThickness: 0,
-        decorationStyle: TextDecorationStyle.solid),
+      fontFamily: 'Bangers',
+      fontStyle: FontStyle.normal,
+      fontWeight: FontWeight.w400,
+      color: Colors.white,
+      letterSpacing: 1,
+      fontSize: 16,
+      decoration: TextDecoration.none,
+    ),
   );
 }

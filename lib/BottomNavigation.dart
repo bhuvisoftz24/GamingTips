@@ -16,13 +16,34 @@ class _BottomNavigtionBarState extends State<BottomNavigtionBar> {
       width: MediaQuery.of(context).size.width * 2.0,
       height: MediaQuery.of(context).size.width * 0.22,
       decoration: BoxDecoration(
+        border: Border.all(
+          width: 0,
+        ),
+        gradient: LinearGradient(
+          begin: Alignment.topCenter,
+          end: Alignment.bottomCenter,
+          colors: [
+            Colors.black.withOpacity(0),
+            Colors.black.withOpacity(1.0),
+          ],
+        ),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black.withOpacity(0.9),
+            blurRadius: 30,
+            spreadRadius: 30,
+            offset: Offset(0, 4),
+          ),
+        ],
+      ),
+      /*decoration: BoxDecoration(
         image: DecorationImage(
           image: AssetImage(
             'assets/images/Rectangle637.png',
           ),
           fit: BoxFit.cover,
         ),
-      ),
+      ),*/
       child: new BottomNavigationBar(
         selectedItemColor: Colors.red,
         unselectedItemColor: Colors.white,
